@@ -1,2 +1,37 @@
-# St.-Petersburg-Coastal-Navigation-Hazard-Assessment
-A GIS workflow transforming raw S-57 maritime data into a professional web map. Includes SQL-based attribute refactoring in QGIS, OGC GeoPackage optimization, and custom cartography in ArcGIS Online to visualize navigation assets and coastal hazards in St. Petersburg, FL.
+# St. Petersburg Coastal Navigation & Hazard Assessment
+
+## 🔗 Project Link
+**[View the Interactive StoryMap](https://storymaps.arcgis.com/stories/3cf9f1975e864b81ba28269a39451c1f)**
+
+<img width="846" height="577" alt="Capture1" src="https://github.com/user-attachments/assets/c3b23354-bad3-4e25-b939-d0f8296f64c1" />
+
+
+## 📌 Project Summary
+This project demonstrates a full-cycle GIS workflow, transforming raw, legacy-encoded maritime data into a modernized, web-ready spatial interface. Focused on the coastal waters of **St. Petersburg, Florida**, the analysis provides a **Common Operating Picture** for identifying navigation assets and submerged hazards. 
+
+By bridging the gap between complex **S-57** data standards and intuitive web cartography, this repository showcases advanced skills in data engineering, schema refactoring, and database management.
+
+## 🛠️ Tech Stack & Skills
+* **GIS Software:** QGIS 3.x, ArcGIS Online
+* **Data Engineering:** SQL (CASE Expressions), Schema Mapping, Attribute Refactoring
+* **Database Management:** OGC GeoPackage (.gpkg) Optimization
+* **Narrative Design:** ArcGIS StoryMaps
+
+## 🚀 Key Workflow Phases
+
+### 1. Schema Refactoring & Logic
+Initial S-57 hydrographic data utilized numeric legacy encoding (e.g., `BOYSHP` values as integers). I performed a comprehensive refactoring of these attribute tables using **CASE WHEN** logic in QGIS to map these codes into human-readable categories such as "Pillar," "Can," and "Conical" buoy structures.
+
+### 2. Attribute Optimization
+To ensure the data was stakeholder-ready, I addressed database constraints by configuring **Field Aliases**. This step corrected truncated headers and transformed cryptic database shorthand into professional, descriptive titles.
+
+### 3. Data Portability & Storage
+To prioritize data integrity, all processed layers—including **Navigation Assets**, **Safety Hazards**, and **Bathymetry**—were exported into a unified **OGC GeoPackage**. This approach ensures a centralized, cross-platform spatial database ready for enterprise-level deployment.
+
+### 4. Interactive Web Deployment
+The final data was hosted via **ArcGIS Online** and integrated into a high-contrast web map. By utilizing the **ArcGIS Oceans** basemap and professional symbology, the map provides immediate clarity for maritime risk assessment and asset management.
+
+## 📊 Data Sources
+* **S-57 Hydrographic Data:** NOAA Office of Coast Survey
+* **Basemap Integration:** Esri ArcGIS Oceans
+* **Study Area:** St. Petersburg Coastal Environment, FL
